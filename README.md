@@ -1,4 +1,4 @@
-# jahnkelabs homebrew tap
+# homebrew-tap
 
 A shared **[Homebrew tap](https://docs.brew.sh/Taps)** for managing formulas belonging to the `jahnkelabs` organization.
 
