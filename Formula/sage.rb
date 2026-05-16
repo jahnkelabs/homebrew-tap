@@ -5,21 +5,21 @@
 class Sage < Formula
   desc "Docker Compose helper with sage.alias.* label shortcuts"
   homepage "https://github.com/jahnkelabs/sage"
-  version "1.0.2"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jahnkelabs/sage/releases/download/v1.0.2/sage_1.0.2_Darwin_amd64.tar.gz"
-      sha256 "6679020d1b98a01eb935eef76d406f8d296b6ef92006f0befa874b70d1568250"
+      url "https://github.com/jahnkelabs/sage/releases/download/v1.0.4/sage_1.0.4_Darwin_amd64.tar.gz"
+      sha256 "6230c51c184a1dbe4acc0dd086ba32804cccf7c5332959fe05c85a1a3ce0861d"
 
       define_method(:install) do
         bin.install "sage"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jahnkelabs/sage/releases/download/v1.0.2/sage_1.0.2_Darwin_arm64.tar.gz"
-      sha256 "bb453fbf15740abb9cbf7d1772f9a71602f56b3bddf00e6859b0cb4b0967a843"
+      url "https://github.com/jahnkelabs/sage/releases/download/v1.0.4/sage_1.0.4_Darwin_arm64.tar.gz"
+      sha256 "35c5060a18118a4777244fd46de3e6c765e8bf63998bf49f5a50c1cf2233d505"
 
       define_method(:install) do
         bin.install "sage"
@@ -29,15 +29,15 @@ class Sage < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jahnkelabs/sage/releases/download/v1.0.2/sage_1.0.2_Linux_amd64.tar.gz"
-      sha256 "5b93fd0bf56daf805bf3a0228886fe8d73da85150740fe0fb833b34bc0163f37"
+      url "https://github.com/jahnkelabs/sage/releases/download/v1.0.4/sage_1.0.4_Linux_amd64.tar.gz"
+      sha256 "b7afefe01aa22a178df5d44730d813bffe53fb0c27eeee5994d05d278489ecaa"
       define_method(:install) do
         bin.install "sage"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jahnkelabs/sage/releases/download/v1.0.2/sage_1.0.2_Linux_arm64.tar.gz"
-      sha256 "73ed3584fbc1e242daec957503f4020dccab485ffd6a2e802f1fb1f4e4b8bf06"
+      url "https://github.com/jahnkelabs/sage/releases/download/v1.0.4/sage_1.0.4_Linux_arm64.tar.gz"
+      sha256 "4561f8eeaf21950292aa15463d9b314f57e1063cbc8f43e7b66c9ab024b09651"
       define_method(:install) do
         bin.install "sage"
       end
